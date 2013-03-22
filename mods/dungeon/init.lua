@@ -235,8 +235,8 @@ mobs.make_vault_part = function(p, part, pr)
 			table.insert(invcontent, 'bucket:bucket_water 1')
 		end
 		if pr:next(1,34) == 1 then
-			table.insert(invcontent, 'bucket:nyancat 1')
-			table.insert(invcontent, 'bucket:nyancat_rainbow '..tostring(pr:next(1,6)))
+			table.insert(invcontent, 'default:nyancat 1')
+			table.insert(invcontent, 'default:nyancat_rainbow '..tostring(pr:next(1,6)))
 		end
 		if pr:next(1,2) == 1 then
 			table.insert(invcontent, 'default:gravel '..tostring(pr:next(1,10)))
