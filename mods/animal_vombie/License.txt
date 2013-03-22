@@ -1,0 +1,8 @@
+Licenses
+
+CCO
+	sounds/animal_vombie_sun_damage.ogg
+	sounds/animal_vombie_random_1.ogg
+
+Everything not mentioned:
+	CC-BY-SA, Author sapier

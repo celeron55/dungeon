@@ -1,0 +1,16 @@
+--vombie--
+random:
+	random_1.ogg
+hit:
+	--missing--
+die:
+	--missing--
+melee:
+	hit.ogg
+sun_damage:
+	sun_damage.ogg
+
+
+
+
+
