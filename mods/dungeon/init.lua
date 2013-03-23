@@ -2,6 +2,10 @@
 
 local DUNGEON_Y = -1000
 
+-- We always want damage.
+-- This is kind of a hack, but the engine doesn't support a better way.
+minetest.setting_set("enable_damage", "true")
+
 -- Define this so ores don't get placed on walls
 minetest.register_node("dungeon:stone", {
 	description = "Dungeon Stone",
@@ -206,7 +210,7 @@ mobs.make_vault_part = function(p, part, pr)
 		elseif pr:next(1,4) == 1 then
 			item = 'default:apple '..tostring(pr:next(1,3))
 		elseif pr:next(1,6) == 1 then
-			item = 'default:sword_stone '..tostring(pr:next(2,5)*100)
+			item = 'default:sword_stone '..tostring(pr:next(2,5)*10000)
 		end
 	elseif part == 't' then
 		local invcontent = {}
